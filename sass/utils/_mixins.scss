@@ -1,0 +1,130 @@
+// 1er menu  -------------------------------------
+
+@mixin font-first-menu{
+    color:$la-note-color;
+    font-family: "LaNote";
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+@mixin font-first-menu-MENU{
+    color: #461c22;
+    font-family: 'Helvetica', cursive;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+@mixin border-bottom-lanote {
+        content: "";
+        display: block; 
+        width: 0%; 
+        border-bottom: 5px solid #461c22; 
+        transition: 500ms ease ; 
+}
+
+// 2éme menu  -------------------------------------
+
+@mixin font-second-menu{
+    background:radial-gradient(circle at top left, #C77427, #8E57FC);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 25px;
+            letter-spacing: 1px;
+}
+
+@mixin font-second-menu-MENU{
+    color: #d28e42;
+    font-family: "Croissant One", cursive ;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+@mixin border-bottom-lechic-un {
+    content: "";
+    display: block; 
+    width: 0%; 
+    border-bottom: 5px solid #C77427; 
+    transition: 500ms ease ; 
+}
+
+@mixin border-bottom-lechic-deux {
+    content: "";
+    display: block; 
+    width: 0%; 
+    border-bottom: 5px solid #8E57FC; 
+    transition: 500ms ease ; 
+}
+
+@mixin border-bottom-lechic-trois{
+    content: "";
+    display: block; 
+    width: 0%; 
+    border-bottom: 5px solid #6824f0; 
+    transition: 500ms ease ; 
+}
+
+// 3éme menu -------------------------------------
+@mixin font-third-menu{
+    background: linear-gradient(to right, #1541DE, #55B3F8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-family: 'LeDelice';
+            font-size: 25px;
+            letter-spacing: 1px;
+}
+
+@mixin font-third-menu-MENU{
+    color: #108bfb;
+    font-family: 'ThirdMenu', cursive ;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+@mixin border-bottom-ledelice{
+    content: "";
+    display: block; 
+    width: 0%; 
+    border-bottom: 5px solid #1541DE; 
+    transition: 500ms ease ; 
+}
+
+// 4éme menu--------------------------------------
+@mixin font-forth-menu{
+    background: linear-gradient(to right, #38842C, #AFF76C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+            font-family: 'LePalette';
+            font-size: 25px;
+            letter-spacing: 1px;
+}
+
+@mixin font-forth-menu-MENU{
+    color: #7dc463;
+    font-family: 'ForthMenu';
+    font-size: 25px;
+    font-weight: bolder;
+}
+@mixin border-bottom-lapalette{
+    content: "";
+    display: block; 
+    width: 0%; 
+    border-bottom: 5px solid #AFF76C; 
+    transition: 500ms ease ; 
+}
+
+
+// Containers : -------------------------------------
+@mixin width-padding-margin {
+    width: 60%;
+    padding-bottom: 20px;
+    margin: auto;
+    
+}
+
+
+// TIPS  responsive ----------------------------------------------
+
+@mixin with-et-margin{
+    width: 100%;
+    margin-bottom: 100px;
+}

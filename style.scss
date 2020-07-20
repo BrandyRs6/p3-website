@@ -1,0 +1,871 @@
+@import './utils/variables';
+@import './sass/utils/mixins';
+// start font-face
+@font-face{
+    font-family: "LaNote";
+    src: url("/sass/fonts/MaShanZheng-Regular.ttf");
+}
+// first menu
+@font-face{
+    font-family: "LaNote--Menu";
+    src: url("/sass/fonts/IndieFlower-Regular.ttf");
+}
+@font-face{
+    font-family: "LeDelice";
+    src: url("/sass/fonts/DancingScript-Regular.ttf");
+}
+@font-face{
+    font-family: "ThirdMenu";
+    src: url("/sass/fonts/Caveat-Regular.ttf");
+}
+@font-face{
+    font-family: "LaPalette";
+    src: url("/sass/fonts/ArchitectsDaughter-Regular.ttf");
+}
+@font-face{
+    font-family: "ForthMenu";
+    src: url("/sass/fonts/Sacramento-Regular.ttf");
+}
+// end font-face
+
+body{
+    background-color: whitesmoke;
+    margin:0;
+    padding: 0;
+}
+
+header{
+    background-color: $primary-color;
+    color:$secondary-color;
+    font-family: "Montserrat", sans-serif;
+    margin-top: -21px;
+    .logo{
+        text-align: center;
+        line-height: 3em;
+    }
+    a{
+        color:$secondary-color;
+    }
+}
+
+main{
+    display: block;
+}
+.les__menu{
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: wrap;
+    width: 65%;
+    margin: auto;
+}
+.img__HomeNote{
+    margin-bottom: -50px;
+}
+.container__home{
+        display: flex;
+        text-align: center;
+        width: 400px;
+        height: 650px;
+        margin: 15px;
+        font-size: 20px;
+        box-shadow: 0px 3px 15px 4px #0000003f;
+        &:hover{
+            box-shadow:0px 3px 15px 6px #00000025;
+        }
+    }
+    a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        width: 100%;
+     
+    }
+    #laNoteEnchantee{
+        background-color: $menu-un-color;
+        h1{
+            @include font-first-menu;
+         }
+         p{
+             @include font-first-menu-MENU;
+         }
+    }
+    #leChicALaFrancaise{
+        background-color: $menu-deux-color;
+        h2{
+           @include font-second-menu;
+        }  
+        p{
+            @include font-second-menu-MENU;
+        }
+    }
+    #LeDeliceDesPapilles{
+        background-color: $menu-trois-color;
+        h3{
+            @include font-third-menu;
+        }
+        p{
+            @include font-third-menu-MENU;
+        }
+    }
+    #LaPaletteDuGout{
+        background-color: $menu-quatre-color;
+        h4{
+          @include font-forth-menu;
+        }
+        p{
+            @include font-forth-menu-MENU;
+        }
+    }
+
+
+.container__prochainement{
+    padding-bottom: 130px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    .container__prochainement--element{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $primary-color;
+        color:$secondary-color;
+        font-size: 12px;
+        cursor: pointer;
+        margin: auto;
+        border-radius: 5%;
+        width: 350px;
+    }
+}
+.points{
+    display: flex;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+.point{
+    background-color: $secondary-color;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    margin-right: 10px; 
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    line-height: 3rem;
+    height: 80px;
+    background-color: $primary-color;
+    margin-top: 50px;
+    a{
+        color: $secondary-color;
+        font-size: 25.5px;
+        margin-top: 20px;
+    }
+}
+
+// Partie LaNoteEnchanteeSingle
+.CenterTextAlignLaNote{
+    text-align: center;
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+}
+section{
+    display: block;
+}
+
+.contenu__LaNoteEnchanteeSingle{
+    width: 60%;
+    background-color: $menu-un-color;
+    margin:auto;
+    margin-bottom: 130px;
+
+    .MiseEnPage, .element__Prix-et-Contenu-alpha{
+        font-family: 'LaNote--Menu';
+        font-weight: bolder;
+    }
+    h2{
+        @include font-first-menu;
+        text-align: center;
+        font-size: 35px;
+    }
+    .img__header{
+        text-align: center;
+    }
+}
+.MiseEnPage{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.element__titres-et-images{
+    font-weight: bolder;;
+}
+.element__Prix-et-Contenu:nth-child(1),
+.element__Prix-et-Contenu:nth-child(3),
+.element__Prix-et-Contenu:nth-child(5),
+.element__Prix-et-Contenu:nth-child(7){
+    display: flex;
+    flex-basis: 60%;
+    text-align: left;
+    font-size: 14px;
+}.element__Prix-et-Contenu-alpha{
+    padding-left: 102px;
+    font-weight: bolder;
+}
+.footer__laNote-img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    img{
+        width: 7%;
+    }
+    h3{
+        @include font-first-menu;
+    }
+}
+
+// Partie le chic à la française 
+.contenu__LeChicSingle{
+    @include width-padding-margin;
+    background-color: $menu-deux-color;
+    font-family: 'Times New Roman', Times, serif;
+    
+    h2{
+        @include font-second-menu;
+        text-align: center;
+        font-size: 35px;
+    }
+}
+.colorLeChicFirst-MENU{
+    color: #cc822b;
+    font-weight: bolder
+}
+.colorLeChicSecond-MENU{
+    color: #a56799;
+    font-weight: bolder
+}
+.colorLeChicThird-MENU{
+    color: #a277c6;
+    font-weight: bolder;
+}
+
+// Partie le delice des papilles
+.contenu__LeDeliceSingle{
+    @include width-padding-margin;
+    background-color: $menu-trois-color;
+    .MiseEnPage{
+        font-family: 'LeDelice', cursive;
+        font-weight: bolder;
+    }    
+    h1{
+        @include font-third-menu;
+        text-align: center;
+        font-size: 35px;
+    }
+}
+
+// Partie la palette de gout
+.contenu__LaPaletteSingle{
+    @include width-padding-margin;
+    background-color: $menu-quatre-color;
+    font-family: 'Times New Roman', Times, serif;
+    .MiseEnPage{
+        font-family: 'LaPalette';
+        font-weight: bolder;
+    }    
+     h1{
+        @include font-forth-menu;
+        text-align: center;
+        font-size: 35px;
+    }
+}
+
+// Format Responsive -------------------------------------------------------------
+
+// Format ordi portable
+@media  (max-width: 1326px){
+    // les menu pour width 
+    .les__menu{
+        width: 99%;
+    }
+    // la note en responive 
+    .contenu__LaNoteEnchanteeSingle{
+        width: 95%;
+        .element__Prix-et-Contenu-alpha{
+            padding: 0px 0px 0px 90px;
+        }
+        .element__titres-et-images{
+            img{
+                width: 156px;
+            }
+        }
+    }
+    // le chic à la française
+    .contenu__LeChicSingle{
+        width: 100%;
+        margin-bottom: 100px;
+        .element__Prix-et-Contenu-alpha{
+            padding: 0px 0px 0px 97px;
+            font-size: 17px;
+        }
+        .element__titres-et-images{
+            
+            img{
+            width: 251px;
+            }
+    
+        }
+        .element__Prix-et-Contenu{
+            font-size: 17px;
+        }
+    }
+
+     // Le delice des papilles
+     .contenu__LeDeliceSingle{
+        width: 100%;
+        margin-bottom: 100px;
+        .element__Prix-et-Contenu-alpha{
+            font-size: 17px;
+        }
+        .element__titres-et-images{
+            
+            img{
+            width: 251px;
+            }
+
+        }
+        .element__Prix-et-Contenu{
+            font-size: 17px;
+        }
+    }
+
+    // La palette du gout
+    .contenu__LaPaletteSingle{
+        width: 100%;
+        margin-bottom: 100px;
+        .element__Prix-et-Contenu-alpha{
+            font-size: 17px;
+        }
+        .element__titres-et-images{
+            
+            img{
+            width: 251px;
+            }
+
+        }
+        .element__Prix-et-Contenu{
+            font-size: 17px;
+        }
+    }
+}
+// fin format 1024px
+
+
+// Format tablette
+@media  (max-width: 768px){
+    .les__menu{
+        .container__home{
+            height: 500px;
+            width: 40%;
+        }
+    }
+    // la note en responive 
+    .contenu__LaNoteEnchanteeSingle{
+        width: 95%;
+        .element__Prix-et-Contenu-alpha{
+            padding: 0px 0px 0px 63px;
+        }
+        .element__titres-et-images{
+            img{
+                width: 106px;
+            }
+        }
+    }
+        // le chic à la française
+        .contenu__LeChicSingle{
+            width: 100%;
+            margin-bottom: 100px;
+            .element__Prix-et-Contenu-alpha{
+                padding: 0px 0px 0px 67px;
+                font-size: 15px;
+            }
+            .element__titres-et-images{
+                
+                img{
+                width: 150px;
+                }
+        
+            }
+            .element__Prix-et-Contenu{
+                font-size: 15px;
+            }
+        }
+         // Le delice des papilles
+         .contenu__LeDeliceSingle{
+            width: 100%;
+            margin-bottom: 100px;
+            .element__Prix-et-Contenu-alpha{
+                font-size: 15px;
+            }
+            .element__titres-et-images{
+                
+                img{
+                width: 150px;
+                }
+
+            }
+            .element__Prix-et-Contenu{
+                font-size: 15px;
+            }
+        }
+
+        // La palette du gout
+     .contenu__LaPaletteSingle{
+        width: 100%;
+        margin-bottom: 100px;
+        .element__Prix-et-Contenu-alpha{
+            font-size: 15px;
+        }
+        .element__titres-et-images{
+            
+            img{
+            width: 150px;
+            }
+
+        }
+        .element__Prix-et-Contenu{
+            font-size: 15px;
+        }
+    }
+}
+// fin format tablette
+
+
+// format 425 tel
+@media  (max-width: 425px){
+    .les__menu{
+        .container__home{
+            height: 300px;
+            width: 65%;
+            h1{
+                font-size: 17px;
+            }
+        }
+    }
+    // container prochainnement
+    .container__prochainement {
+        .container__prochainement--element{
+            width: 250px;
+        }
+    }
+    // la note en responive 
+    .contenu__LaNoteEnchanteeSingle{
+        width: 95%;
+        .element__Prix-et-Contenu-alpha{
+            padding: 0px 0px 0px 20px;
+        }
+        .element__titres-et-images{
+            img{
+                width: 106px;
+            }
+        }
+    }
+            // le chic à la française
+            .contenu__LeChicSingle{
+                @include with-et-margin;
+                .element__Prix-et-Contenu-alpha{
+                    padding: 0px 0px 0px 35px;
+                    font-size: 12px;
+                }
+                .element__titres-et-images{
+                    
+                        font-size: 13px;
+                    
+                    img{
+                    width: 126px;
+                    }
+            
+                }
+                .element__Prix-et-Contenu{
+                    font-size: 12px;
+                }
+                h2{
+                    font-size: 25px;
+                }
+            }
+
+             // Le delice des papilles
+        .contenu__LeDeliceSingle{
+            @include with-et-margin;
+            .element__Prix-et-Contenu-alpha{
+                font-size: 12px;
+            }
+            .element__titres-et-images{
+                
+                img{
+                width: 126px;
+                }
+
+            }
+            .element__Prix-et-Contenu{
+                font-size: 12px;
+            }
+        }
+
+        // La palette du gout
+     .contenu__LaPaletteSingle{
+        @include with-et-margin;
+        .element__Prix-et-Contenu-alpha{
+            font-size: 12px;
+        }
+        .element__titres-et-images{
+            
+            img{
+            width: 126px;
+            }
+
+        }
+        .element__Prix-et-Contenu{
+            font-size: 12px;
+        }
+    }
+}
+// fin format 425 tel
+
+
+// format 375 tel
+@media  (max-width: 375px){
+    .les__menu{
+        .container__home{
+            height: 285px;
+            width: 60%;
+            h1{
+                font-size: 17px;
+            }
+        }
+    }
+        // la note en responive 
+    .contenu__LaNoteEnchanteeSingle{
+        width: 95%;
+        .element__Prix-et-Contenu-alpha{
+            padding: 0px 0px 0px 20px;
+        }
+        .element__titres-et-images{
+            img{
+                width: 106px;
+            }
+        }
+    }
+
+// le chic à la française
+.contenu__LeChicSingle{
+    @include with-et-margin;
+    .element__Prix-et-Contenu-alpha{
+        padding: 0px 0px 0px 27px;
+        font-size: 12px;
+    }
+    .element__titres-et-images{
+        font-size: 13px;
+        img{
+        width: 101px;
+        }
+       
+    }
+    .element__Prix-et-Contenu{
+        font-size: 12px;
+    }
+}
+ // Le delice des papilles
+ .contenu__LeDeliceSingle{
+    @include with-et-margin;
+    .element__Prix-et-Contenu-alpha{
+        font-size: 12px;
+    }
+    .element__titres-et-images{
+        
+        img{
+        width: 101px;
+        }
+
+    }
+    .element__Prix-et-Contenu{
+        font-size: 12px;
+    }
+}
+
+// La palette du gout
+.contenu__LaPaletteSingle{
+    @include with-et-margin;
+    .element__Prix-et-Contenu-alpha{
+        font-size: 12px;
+    }
+    .element__titres-et-images{
+        
+        img{
+        width: 101px;
+        }
+
+    }
+    .element__Prix-et-Contenu{
+        font-size: 12px;
+    }
+}
+}
+// fin format 375 tel 
+
+
+// format 320 tel
+@media  (max-width: 320px){
+    .les__menu{
+        .container__home{
+            height: 285px;
+            width: 65%;
+            h1{
+            font-size: 15px;
+            }
+        }
+    }
+     // la note en responive 
+    .contenu__LaNoteEnchanteeSingle{
+        width: 100%;
+        .element__Prix-et-Contenu-alpha{
+            padding: 0px 0px 0px 20px;
+        }
+        .element__titres-et-images{
+            img{
+                width: 76px;
+            }
+        }
+    }
+     footer{
+         a{
+             font-size: 21px;
+         }
+     }
+  // le chic à la française
+        .contenu__LeChicSingle{
+            @include with-et-margin;
+            .element__Prix-et-Contenu-alpha{
+                padding: 0px 0px 0px 27px;
+                font-size: 12px;
+            }
+            .element__titres-et-images{
+                font-size: 13px;
+                img{
+                width: 74px;
+                }
+
+            }
+            .element__Prix-et-Contenu{
+                font-size: 12px;
+            }
+            h2{
+                font-size: 25px;
+            }
+        }
+        // Le delice des papilles
+        .contenu__LeDeliceSingle{
+            @include with-et-margin;
+            .element__Prix-et-Contenu-alpha{
+                font-size: 12px;
+            }
+            .element__titres-et-images{
+                
+                img{
+                width: 74px;
+                }
+
+            }
+            .element__Prix-et-Contenu{
+                font-size: 12px;
+            }
+        }
+
+       
+
+        // La palette du gout
+     .contenu__LaPaletteSingle{
+        width: 100%;
+        margin-bottom: 100px;
+        .element__Prix-et-Contenu-alpha{
+            font-size: 12px;
+        }
+        .element__titres-et-images{
+            
+            img{
+            width: 74px;
+            }
+
+        }
+        .element__Prix-et-Contenu{
+            font-size: 12px;
+        }
+    }
+}
+//  fin format 320  tel
+
+
+//Annimations --------------------------------
+
+.zoom__hover{
+    transition: 400ms all ease;
+    &:hover{
+        transform: scale(1.30);
+        opacity: 0.5;
+        background-color: transparent;
+    }
+}
+
+footer>div a:hover{
+    animation-duration: 300ms;
+    animation-timing-function: ease-in-out;
+    animation-name: footer-components;
+}
+@keyframes footer-components{
+    0%{
+        transform: rotate(20deg);
+    }
+
+    50%{
+        transform: rotate(-20deg);
+    }
+
+    70%{
+        transform: rotate(20deg);
+    }
+
+    100%{
+        transform: rotate(-20deg);
+    }
+}
+
+
+
+.point-un{
+    animation: point-un 1000ms 110ms ease infinite;
+}
+.point-deux{
+    animation: point-deux 1000ms 120ms ease infinite;
+}
+.point-trois{
+    animation: point-trois 1000ms 130ms ease infinite;
+}
+
+@keyframes point-un{
+    0%{
+        transform: translateY(-5px);
+    }
+    50%{
+        transform: translateY(-5px);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes point-deux{
+    0%{
+        transform: translateY(-10px);
+    }
+    50%{
+        transform: translateZ(-10px);
+
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes point-trois{
+    0%{
+        transform: translateY(-15px);
+    }
+    50%{
+        transform: translateZ(-15px);
+
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+}
+
+
+
+
+.border-bottom-lanote>h3:after {
+    @include border-bottom-lanote;
+
+}
+
+.border-bottom-lanote>h3:hover:after {
+    width: 100%;
+}
+
+// le chic
+.border-bottom-lechic-un>h3:after{
+    @include border-bottom-lechic-un;
+
+}
+
+.border-bottom-lechic-un>h3:hover:after {
+    width: 100%;
+}
+
+.border-bottom-lechic-deux>h3:after{
+    @include border-bottom-lechic-deux;
+
+}
+
+.border-bottom-lechic-deux>h3:hover:after {
+    width: 100%;
+}
+
+.border-bottom-lechic-trois>h3:after{
+    @include border-bottom-lechic-trois;
+
+}
+
+.border-bottom-lechic-trois>h3:hover:after {
+    width: 100%;
+}
+
+// le delice
+.border-bottom-ledelice>h3:after{
+    @include border-bottom-ledelice;
+
+}
+
+.border-bottom-ledelice>h3:hover:after {
+    width: 100%;
+}
+
+// lapalette
+
+.border-bottom-lapalette>h3:after{
+    @include border-bottom-lapalette;
+
+}
+
+.border-bottom-lapalette>h3:hover:after {
+    width: 100%;
+}
+
+.mention-main{
+    text-align: center;
+    width: 100%;
+}
+
+
+.img-lanote{
+    width: 40%;
+}
