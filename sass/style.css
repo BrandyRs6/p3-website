@@ -1,31 +1,31 @@
 @font-face {
   font-family: "LaNote";
-  src: url("/sass/fonts/MaShanZheng-Regular.ttf");
+  src: url("../fonts/MaShanZheng-Regular.ttf");
 }
 
 @font-face {
   font-family: "LaNote--Menu";
-  src: url("/sass/fonts/IndieFlower-Regular.ttf");
+  src: url("../fonts/IndieFlower-Regular.ttf");
 }
 
 @font-face {
   font-family: "LeDelice";
-  src: url("/sass/fonts/DancingScript-Regular.ttf");
+  src: url("../fonts/DancingScript-Regular.ttf");
 }
 
 @font-face {
   font-family: "ThirdMenu";
-  src: url("/sass/fonts/Caveat-Regular.ttf");
+  src: url("../fonts/Caveat-Regular.ttf");
 }
 
 @font-face {
   font-family: "LaPalette";
-  src: url("/sass/fonts/ArchitectsDaughter-Regular.ttf");
+  src: url("../fonts/ArchitectsDaughter-Regular.ttf");
 }
 
 @font-face {
   font-family: "ForthMenu";
-  src: url("/sass/fonts/Sacramento-Regular.ttf");
+  src: url("../fonts/Sacramento-Regular.ttf");
 }
 
 body {
@@ -436,9 +436,9 @@ section {
   font-size: 35px;
 }
 
-@media (max-width: 1326px) {
+@media (max-width: 1483px) {
   .les__menu {
-    width: 99%;
+    width: 89%;
   }
   .contenu__LaNoteEnchanteeSingle {
     width: 95%;
@@ -447,7 +447,7 @@ section {
     padding: 0px 0px 0px 90px;
   }
   .contenu__LaNoteEnchanteeSingle .element__titres-et-images img {
-    width: 156px;
+    width: 256px;
   }
   .contenu__LeChicSingle {
     width: 100%;
@@ -458,7 +458,7 @@ section {
     font-size: 17px;
   }
   .contenu__LeChicSingle .element__titres-et-images img {
-    width: 251px;
+    width: 156px;
   }
   .contenu__LeChicSingle .element__Prix-et-Contenu {
     font-size: 17px;
@@ -514,7 +514,7 @@ section {
     font-size: 15px;
   }
   .contenu__LeChicSingle .element__titres-et-images img {
-    width: 150px;
+    width: 126px;
   }
   .contenu__LeChicSingle .element__Prix-et-Contenu {
     font-size: 15px;
@@ -579,7 +579,7 @@ section {
     font-size: 13px;
   }
   .contenu__LeChicSingle .element__titres-et-images img {
-    width: 126px;
+    width: 94px;
   }
   .contenu__LeChicSingle .element__Prix-et-Contenu {
     font-size: 12px;
@@ -644,7 +644,7 @@ section {
     font-size: 13px;
   }
   .contenu__LeChicSingle .element__titres-et-images img {
-    width: 101px;
+    width: 74px;
   }
   .contenu__LeChicSingle .element__Prix-et-Contenu {
     font-size: 12px;
@@ -913,7 +913,7 @@ footer > div a:hover {
   content: "";
   display: block;
   width: 0%;
-  border-bottom: 5px solid #461c22;
+  border-bottom: 2px solid #461c22;
   -webkit-transition: 500ms ease;
   transition: 500ms ease;
 }
@@ -926,7 +926,7 @@ footer > div a:hover {
   content: "";
   display: block;
   width: 0%;
-  border-bottom: 5px solid #C77427;
+  border-bottom: 2px solid #C77427;
   -webkit-transition: 500ms ease;
   transition: 500ms ease;
 }
@@ -939,7 +939,7 @@ footer > div a:hover {
   content: "";
   display: block;
   width: 0%;
-  border-bottom: 5px solid #8E57FC;
+  border-bottom: 2px solid #8E57FC;
   -webkit-transition: 500ms ease;
   transition: 500ms ease;
 }
@@ -952,7 +952,7 @@ footer > div a:hover {
   content: "";
   display: block;
   width: 0%;
-  border-bottom: 5px solid #6824f0;
+  border-bottom: 2px solid #6824f0;
   -webkit-transition: 500ms ease;
   transition: 500ms ease;
 }
@@ -965,7 +965,7 @@ footer > div a:hover {
   content: "";
   display: block;
   width: 0%;
-  border-bottom: 5px solid #1541DE;
+  border-bottom: 2px solid #1541DE;
   -webkit-transition: 500ms ease;
   transition: 500ms ease;
 }
@@ -978,7 +978,7 @@ footer > div a:hover {
   content: "";
   display: block;
   width: 0%;
-  border-bottom: 5px solid #AFF76C;
+  border-bottom: 2px solid #AFF76C;
   -webkit-transition: 500ms ease;
   transition: 500ms ease;
 }
