@@ -198,6 +198,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 20px;
 }
 
 .container__prochainement .container__prochainement--element {
@@ -212,10 +213,10 @@ a {
           align-items: center;
   background-color: #579c87;
   color: #fdcb46;
-  font-size: 12px;
+  font-size: 22px;
   cursor: pointer;
   margin: auto;
-  border-radius: 5%;
+  border-radius: 10px;
   width: 350px;
 }
 
